@@ -2,7 +2,7 @@ import torch
 
 if __name__ == "__main__":
     x = torch.zeros(2, requires_grad=True)
-    f = lambda x : (x + torch.tensor([-3, 2])).pow(2).sum()
+    f = lambda x : (x + torch.tensor([0, 0])).pow(2).sum()
     lr = 0.1
 
     for i in range(10):
